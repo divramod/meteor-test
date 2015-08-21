@@ -5,9 +5,9 @@
 <body>
     <div class="container">
         <header>
-            <h1>Todo List</h1>
+            <h1>Todo List ({{incompleteCount}})</h1>
         </header>
-        {{> formTask}}
+        {{> settings}} {{> formTask}}
         <ul>
             {{#each tasks}} {{> task}} {{/each}}
         </ul>
