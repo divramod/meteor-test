@@ -1,0 +1,18 @@
+<ion-footer-bar class="bar-balanced dm-padding-0" ng-controller="LayoutCtrl">
+    <div class="row">
+        <div class="col col-1 dm-left dm-padding-0">
+            <button ng-click="goBack()" class="button button-icon icon ion-arrow-left-c"></button>
+        </div>
+        <div class="col col-1 dm-center dm-padding-0">
+            <button ng-click="goHome()" class="button button-icon icon ion-home"></button>
+        </div>
+        <div class="col col-1 dm-center dm-padding-0">
+            <button ng-if="!loggedIn()" ui-sref="app.user" class="button button-icon icon ion-log-in"></button>
+            <button ng-if="loggedIn()" ng-click="logout()" class="button button-icon icon ion-log-out"></button>
+        </div>
+        <div class="col col-1 dm-right dm-padding-0">
+            <button ng-click="goSettings()" class="button button-icon icon ion-settings"></button>
+        </div>
+
+    </div>
+</ion-footer-bar>

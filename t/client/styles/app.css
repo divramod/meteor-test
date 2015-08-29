@@ -1,0 +1,16 @@
+.has-header {
+    margin-top: 44px;
+    margin-bottom: 44px;
+    padding-bottom: 44px;
+}
+.text-center {
+    text-align: center;
+}
+.angular-google-map-container {
+    height: 200px;
+    width: 100%;
+}
+.app-div {
+  margin-top: 40px;
+  background-color: red;
+}

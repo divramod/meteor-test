@@ -1,0 +1,16 @@
+<!-- where the initial view template will be rendered -->
+<ion-content class="has-header">
+    <div class="card text-center" ng-show="!loggedIn()">
+        <div class="item item-text-wrap">
+            Du bist nicht angemeldet. Um Ergebnisse erfassen zu können, musst du dich anmelden!
+            <br />
+            <button class="button button-icon icon ion-log-in" ui-sref="app.user"></button>
+        </div>
+    </div>
+    <div class="card text-center" ng-show="loggedIn()">
+        <div class="item item-text-wrap">
+            Hallo {{user}}
+        </div>
+    </div>
+
+</ion-content>

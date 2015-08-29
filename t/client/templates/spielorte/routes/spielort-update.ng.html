@@ -1,0 +1,18 @@
+<ion-content class="has-header">
+    <div ng-if="formData">
+        <formly-form model="formData" fields="formFields">
+        <div class="dm-center">
+          
+            <button class="button button-small icon-left button-balanced ion-edit" ng-click="update()">Änderungen übernehmen</button>
+            <button class="button button-small icon-left button-energized ion-reply" ng-click="reset()">Änderungen verwerfen</button>
+            <button class="button button-small button-assertive icon-left ion-trash-b" ng-click="delete()">{{singular}} löschen</button>
+            <br />
+            <button class="button button-small button-calm icon-left ion-android-list" ng-click="list()">Liste der {{plural}}</button>
+            <button class="button button-small button-light icon-left ion-plus-round" ng-click="create()">Neuen {{plural}} erstellen</button>
+        </div>
+        </formly-form>
+    </div>
+    <div ng-if="!formData">
+      Laden
+    </div>
+</ion-content>

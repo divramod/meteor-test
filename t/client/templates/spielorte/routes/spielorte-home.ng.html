@@ -1,0 +1,21 @@
+<ion-content class="has-header">
+    <div class="list card">
+        <div class="card" ng-repeat="spielort in Spielorte">
+            <div class="item item-divider dm-right">
+                {{spielort.name}}
+                <button ng-click="updateSpielort(spielort)" class="button button-small icon-left button-energized ion-edit">Bearbeiten</button>
+                <button class="button button-small button-assertive icon-left ion-trash-b">Löschen</button>
+            </div>
+            <div class="item item-text-wrap">
+                <div class="angular-google-map-container">
+                    <ui-gmap-google-map center="map.center" events="map.events" zoom="map.zoom" options="map.options">
+                    </ui-gmap-google-map>
+                </div>
+            </div>
+            <div class="item item-divider dm-center">
+                {{spielort.strasse}}
+                <br />{{spielort.plz}} {{spielort.ort}}
+            </div>
+        </div>
+    </div>
+</ion-content>
