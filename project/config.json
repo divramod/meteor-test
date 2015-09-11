@@ -1,0 +1,7 @@
+{
+    "version": "0.0.0",
+    "server": "test",
+    "buildDestination": "app_build",
+    "keyPath": "/home/mod/.keystore/test",
+    "alias": "t"
+}
